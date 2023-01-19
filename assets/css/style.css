@@ -90,6 +90,9 @@ h3{
     flex-direction: row;
     justify-content: space-evenly;
 }
+b{
+    color: orange;
+}
 
 .commande{
     padding: 10px 60px;
