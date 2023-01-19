@@ -60,6 +60,24 @@
     height: 70px;
     border-bottom: solid;
 }
+
+ i{
+    font-size: 30px;
+ 
+
+}
+
+.tableCommande td .load{
+    color:white;
+    padding-right:40px;
+    cursor: wait;
+}
+
+.tableCommande td .trash{
+    color:red
+}
+
+
 /*  fin page commande */
 /* vivien */
 /* debut page contact */
