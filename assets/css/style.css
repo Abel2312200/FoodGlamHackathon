@@ -1,0 +1,40 @@
+/* Debut Header */
+.imageLogo{
+    width: 70px;
+}
+
+.nav-link{
+    color: orange !important;
+    font-size: 23px;
+}
+
+.home{
+    border: 1px dashed gray;
+}
+
+/* Fin Header */
+
+
+/* Debut Banniere Carrousel */
+
+.d-block{
+    width: 100%;
+}
+
+
+/* Fin Banniere Carrousel */
+
+
+
+/* Debut Publicité */
+
+
+/* Fin Publicité */
+
+
+
+/* Debut Specialite */
+
+
+
+/* Fin Specialite */
