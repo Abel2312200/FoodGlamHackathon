@@ -71,7 +71,18 @@ i{
 
 
 /* Debut Specialite */
+h3{
+    text-align: center;
+    color: black;
+    margin: 20px;
+}
+.specialité{
+    background-color: bisque;
+}
 
+.card{
+    width: 13rem;
+}
 
 
 /* Fin Specialite */
