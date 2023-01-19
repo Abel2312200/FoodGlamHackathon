@@ -1,6 +1,7 @@
 /* Debut Header */
 .imageLogo{
-    width: 70px;
+    width: 115px;
+    margin-left: 40px;
 }
 
 .nav-link{
@@ -11,7 +12,14 @@
 .home{
     border: 1px dashed gray;
 }
+.background-aliceblue{
+    background-color: aliceblue;
+}
 
+.fst{
+    font-size: 23px;
+    margin-left: 40px;
+}
 /* Fin Header */
 
 
@@ -23,7 +31,7 @@
 
 .image_carrousel{
     width: 100%;
-    height: 400px;
+    height: 700px;
 }
 .carouselTitle1{
     margin-bottom: 70px;
@@ -109,16 +117,14 @@ b{
 
 
 /* Fin Specialite */
-
-
-
-/* Debut Footer */
-footer{
-    padding: 0 20px;
+/*Debut specialite*/
+.bg-color{
+    background-color: #F6F0D0;
+    box-shadow: black;
 }
 
-.footerIcone{
-    color: white;
+.btn-color{
+    background-color: orange!important;
+    width: "450%!important";
 }
-
-/* Debut Footer */
+/*Fin specialite*/
