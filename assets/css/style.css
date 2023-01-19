@@ -38,3 +38,67 @@
 
 
 /* Fin Specialite */
+/* vivien  */
+/*  debut page commande */
+.TitleCommande{
+    font-weight:bold ;
+    /* text-align: center; */
+    font-size:xx-large;
+    text-shadow: 1px 1px 2px black;
+}
+.tableCommande{
+    text-align: center;
+    border: solid;
+    background-color: #F6F0D0;
+}
+.tableCommande th{
+    width: 300px;
+    border-bottom: solid;
+}
+
+.tableCommande td{
+    height: 70px;
+    border-bottom: solid;
+}
+/*  fin page commande */
+/* vivien */
+/* debut page contact */
+.Formulaire
+{background-color: #F6F0D0;
+align-items: center;
+/* padding: 60px; */
+box-shadow: 10px  gray;
+}
+.Formulaire input{
+    width: 400px;
+    height: 40px;
+    margin: 5px;
+}
+.Formulaire textarea{
+    width: 400px;
+    height: 100px;
+}
+
+.Formulaire button{
+    width: 200px;
+    height: 35px;
+    margin: 5px;
+    border-radius: 10px;
+    background-color:orangered ;
+    color: white;
+    border: none;
+}
+
+.Formulaire a{
+    color: orangered;
+    font-weight: bold;
+}
+
+.form p{
+    color: orangered;
+    font-size: 25px;
+    
+}
+
+
+/* fin page contact */
