@@ -21,13 +21,50 @@
     width: 100%;
 }
 
+.image_carrousel{
+    width: 100%;
+    height: 400px;
+}
+.carouselTitle1{
+    margin-bottom: 70px;
+}
+
+.carouselTitle2{
+    margin-right: 500px;
+    margin-bottom: 60px;
+}
+
+
+h1{
+    font-size: 60px;
+}
 
 /* Fin Banniere Carrousel */
 
 
 
 /* Debut Publicité */
+.publicité{
+    margin-top:20px ;
+    padding: 50px;
+    padding-top: 10px;
+    background-color: orange;
+    height: 420px;
+}
 
+.imagePublicité{
+    width: 100%;
+    height: 310px;
+}
+
+.icone{
+    margin-bottom: 20px;
+}
+
+i{
+    font-size: 50px;
+    color: black;
+}
 
 /* Fin Publicité */
 
