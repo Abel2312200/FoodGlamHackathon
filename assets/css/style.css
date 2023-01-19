@@ -48,7 +48,6 @@ h1{
     margin-top:20px ;
     padding: 50px;
     padding-top: 10px;
-    background-color: orange;
     height: 420px;
 }
 
@@ -66,6 +65,7 @@ i{
     color: black;
 }
 
+
 /* Fin Publicité */
 
 
@@ -77,12 +77,45 @@ h3{
     margin: 20px;
 }
 .specialité{
-    background-color: bisque;
+    background-color: #F7F0D0;
 }
 
 .card{
     width: 13rem;
+    box-shadow: 2px;
+}
+
+.card_Specialite{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.commande{
+    padding: 10px 60px;
+    background-color: orange;
+    border-radius: 20px;
+    color: white;
+}
+
+.boutton{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
 }
 
 
 /* Fin Specialite */
+
+
+
+/* Debut Footer */
+footer{
+    padding: 0 20px;
+}
+
+.footerIcone{
+    color: white;
+}
+
+/* Debut Footer */
