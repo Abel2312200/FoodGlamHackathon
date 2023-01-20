@@ -94,3 +94,20 @@ nav{
   .containerMenu{
     background-color: #F6F0D0;
   }
+
+  /* debut reservation */
+  .banniereReservation{
+    background-image: url("../imgs/reservation/res1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    color: white;
+}
+
+.reservation{
+    background-color: #F6F0D0;
+    box-shadow: 3 px black;
+}
+
+
+  /* fin reservation */
