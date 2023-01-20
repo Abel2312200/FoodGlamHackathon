@@ -1,124 +1,96 @@
 /* Debut Header */
+body {
+  position: relative;
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
 .imageLogo{
-    width: 70px;
+  width: 115px;
+  margin-left: 40px;
+}
+
+.bg-alice{
+  background-color: aliceblue;
+}
+nav{
+  background-color: black;
 }
 
 .nav-link{
-    color: orange !important;
-    font-size: 23px;
+  color: orange !important;
+  font-size: 23px;
+  margin-left: 30px;
 }
 
 .home{
-    border: 1px dashed gray;
+  border: 1px dashed gray;
 }
 
 /* Fin Header */
 
-
-/* Debut Banniere Carrousel */
-
-.d-block{
-    width: 100%;
+.blocimages {
+  background-color: #F6F0D0;
+  width: 100%;
+  height: 900%;
+  padding: 15px 15px;
+  border-top: 1px solid #ddd;
+  }
+    
+.image {
+  display: inline-block;
+  width: 220px;
+  margin-bottom: 50px;
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 3px;
+  padding-bottom: 20px;
+  margin: 20px;
+  }
+        
+.imag {
+  width: 100%;
+  height: 220px;
 }
+    
+.imag img {
+  object-fit: cover;
+  height: 94%;
+  width: 100%;
+  }
 
-.image_carrousel{
+  button{
+    background-color: orange;
+    padding: 5px 10px;
+    border-radius: 20px;
+    border: 4px solid #F6F0D0;
+    color: white;
+  }
+
+  button:hover{
+    transform: scale(1.1); 
+  }
+
+  .imageheader{
+    width: 100%;
+    height: 10%;
+  }
+ 
+  .imageHeader{
     width: 100%;
     height: 400px;
-}
-.carouselTitle1{
-    margin-bottom: 70px;
-}
+  }
 
-.carouselTitle2{
-    margin-right: 500px;
-    margin-bottom: 60px;
-}
+  .lienPlatPays{
+    background-color: black;
+  }
 
-
-h1{
-    font-size: 60px;
-}
-
-/* Fin Banniere Carrousel */
-
-
-
-/* Debut Publicité */
-.publicité{
-    margin-top:20px ;
-    padding: 50px;
-    padding-top: 10px;
-    height: 420px;
-}
-
-.imagePublicité{
-    width: 100%;
-    height: 310px;
-}
-
-.icone{
-    margin-bottom: 20px;
-}
-
-i{
-    font-size: 50px;
-    color: black;
-}
-
-
-/* Fin Publicité */
-
-
-
-/* Debut Specialite */
-h3{
-    text-align: center;
-    color: black;
-    margin: 20px;
-}
-.specialité{
-    background-color: #F7F0D0;
-}
-
-.card{
-    width: 13rem;
-    box-shadow: 2px;
-}
-
-.card_Specialite{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-}
-b{
-    color: orange;
-}
-
-.commande{
-    padding: 10px 60px;
-    background-color: orange;
-    border-radius: 20px;
+  .lienPlatPays a{
     color: white;
-}
+    text-decoration: none;
+  }
 
-.boutton{
-    display: flex;
-    justify-content: center;
-    padding: 20px;
-}
-
-
-/* Fin Specialite */
-
-
-
-/* Debut Footer */
-footer{
-    padding: 0 20px;
-}
-
-.footerIcone{
-    color: white;
-}
-
-/* Debut Footer */
+  .containerMenu{
+    background-color: #F6F0D0;
+  }
