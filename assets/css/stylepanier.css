@@ -1,0 +1,7 @@
+.bannierepanier{
+    background-image: url("../imgs/reservation/res1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    color: white;
+}
