@@ -18,7 +18,7 @@ buttonContact.addEventListener('click', (e) => {
   if (nomContact == "" || emailContact == "" || textareaContact == "") {
     alert("veillez remplir convenablement tous les champs")
   } else {
-    alert(`bonjour a vous, ${nomContact} votre reservation a bien été prise en compte`)
+    alert(`bonjour a vous, ${nomContact} votre message a bien été enregistré`)
     listMessageContact.push({ information: `${nomContact}`, email: `${emailContact}`, message: `${textareaContact}` });
     console.log(listMessageContact);
   }
@@ -49,19 +49,17 @@ function confectionTableauMessage() {// fonction a appeler dans la page admin
                   </tr>`
   }
 
-  console.log(Total)
-
   //appel le tableau
   affichageTableauMessage(tableauMessage)
 
 }
 //------------------------------------------------------------------------
 function affichageTableauMessage(tableauMessage) {
-  const menus = document.querySelector('#tableauMessage')//le menu doit avoir  un identifiant tableauMessage ou creer la div menus avec l'id
-  const tableauMessage = document.createElement('table')
-  tableau.innerHTML = tableauMessage;
-  menus.className('tableCommande')
-  menus.append(tableauMessage);
+  const menusMessage = document.querySelector('#tableauMessage')//le menu doit avoir  un identifiant tableauMessage ou creer la div menus avec l'id
+  const TableauMessage = document.createElement('table')
+  TableauMessage.innerHTML = tableauMessage;
+  menusMessage.className('tableCommande')
+  menusMessage.append(TableauMessage);
   // tableau.setAttributes("border", 2);
 }
 
@@ -125,10 +123,10 @@ function confectionTableauReservation() {//fonction a appéllé dans la page adm
 //------------------------------------------------------------------------
 function affichageTableauReservation(tableauReservation) {
   const menusReservation = document.querySelector('#tableauReservation')////le menu doit avoir  un identifiant tableauReservation ou creer la div menus avec l'id
-  const tableauReservation = document.createElement('table')
-  tableau.innerHTML = tableauReservation;
+  const TableauReservation = document.createElement('table')
+  TableauReservation.innerHTML = tableauReservation;
   menusReservation.className('tableCommande')
-  menusReservation.append(tableauReservation);
+  menusReservation.append(TableauReservation);
   // tableau.setAttributes("border", 2);
 }
 
