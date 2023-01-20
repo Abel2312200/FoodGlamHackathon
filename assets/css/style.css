@@ -98,6 +98,7 @@ h3{
 .card{
     width: 13rem;
     box-shadow: 2px;
+    height: 20rem;
 }
 
 .card_Specialite{
