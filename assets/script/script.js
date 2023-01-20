@@ -15,13 +15,20 @@ buttonContact.addEventListener('click', (e) => {
   let emailContact = document.querySelector('.emailContact').value
   let textareaContact = document.querySelector('.textareaContact').value
   e.preventDefault()
-  listMessageContact.push({ information: `${nomContact}`, email: `${emailContact}`, message: `${textareaContact}` });
-  console.log(listMessageContact);
-  // localStorage.listMessageContact = JSON.stringify(listMessageContact);SECTION LOCAL STORAGE
-  // nomContact.innerTex=" "
-  // emailContact=" "
-  // textareaContact=" "
+  if (nomContact == "" || emailContact == "" || textareaContact == "") {
+    alert("veillez remplir convenablement tous les champs")
+  } else {
+    alert(`bonjour a vous, ${nomContact} votre reservation a bien été prise en compte`)
+    listMessageContact.push({ information: `${nomContact}`, email: `${emailContact}`, message: `${textareaContact}` });
+    console.log(listMessageContact);
+  }
 })
+
+
+// localStorage.listMessageContact = JSON.stringify(listMessageContact);SECTION LOCAL STORAGE
+// nomContact.innerTex=" "
+// emailContact=" "
+// textareaContact=" "
 
 // ecriture dans un tableau du contenu des differents messages recu par les utilisateurs
 //fonction a utiliser par l'administrateur qfin d'afficher le contenu du message
@@ -34,7 +41,7 @@ function confectionTableauMessage() {// fonction a appeler dans la page admin
                   <th> message</th>
                   </tr>`;
   // for (const element of   JSON.parse(localObjectListMessageContact)) {
-    for (const element of  listMessageContact) {
+  for (const element of listMessageContact) {
     tableauMessage += `<tr>
                       <td>${element.information}</td>
                       <td>${element.email}</td>
@@ -51,10 +58,10 @@ function confectionTableauMessage() {// fonction a appeler dans la page admin
 //------------------------------------------------------------------------
 function affichageTableauMessage(tableauMessage) {
   const menus = document.querySelector('#tableauMessage')//le menu doit avoir  un identifiant tableauMessage ou creer la div menus avec l'id
-  const tableau = document.createElement('table')
+  const tableauMessage = document.createElement('table')
   tableau.innerHTML = tableauMessage;
   menus.className('tableCommande')
-  menus.append(tableau);
+  menus.append(tableauMessage);
   // tableau.setAttributes("border", 2);
 }
 
@@ -74,12 +81,19 @@ buttonReservation.addEventListener('click', (e) => {
   let telephoneReservation = document.querySelector('.telephoneReservation').value
   let nombrePersonReservation = document.querySelector('.nombreReservation').value
   e.preventDefault()
-  listReservation.push({ information: `${nomReservation}`, contact: `${telephoneReservation}`, nombre: `${nombrePersonReservation}` });
-  console.log(listReservation);
-  //pour le stockage dans le local storage pour l'acces a la page admis
-  // localStorage.listReservation = JSON.stringify(listReservation) SECTION LOCALSTORAGE
 
+  if (nomReservation == "" || telephoneReservation == "" || nombrePersonReservation == "") {
+    alert("veillez remplir convenablement tous les champs")
+  } else {
+    listReservation
+    listReservation.push({ information: `${nomReservation}`, contact: `${telephoneReservation}`, nombre: `${nombrePersonReservation}` });
+    console.log(listReservation);
+    alert(`bonjour a vous, ${nomReservation} votre reservation a bien été prise en compte`)
+  }
 })
+
+//pour le stockage dans le local storage pour l'acces a la page admis
+// localStorage.listReservation = JSON.stringify(listReservation) SECTION LOCALSTORAGE
 // ecriture dans un tableau du contenu des differents messages recu par les utilisateurs
 //fonction a utiliser par l'administrateur qfin d'afficher le contenu du message en tant que objet stocker dans le local storage
 // var localObjectListReservation = localStorage.listReservation;
@@ -92,9 +106,9 @@ function confectionTableauReservation() {//fonction a appéllé dans la page adm
                   <th> email</th>
                   <th> message</th>
                   </tr>`;
-                  listReservation
+  listReservation
   // for (const element of JSON.parse(localObjectListReservation )) {pour parcourrir le local storage
-    for (const element of listReservation) {
+  for (const element of listReservation) {
     tableauReservation += `<tr>
                       <td>${element.information}</td>
                       <td>${element.contact}</td>
@@ -110,11 +124,11 @@ function confectionTableauReservation() {//fonction a appéllé dans la page adm
 }
 //------------------------------------------------------------------------
 function affichageTableauReservation(tableauReservation) {
-  const menus = document.querySelector('#tableauReservation')////le menu doit avoir  un identifiant tableauReservation ou creer la div menus avec l'id
-  const tableau = document.createElement('table')
+  const menusReservation = document.querySelector('#tableauReservation')////le menu doit avoir  un identifiant tableauReservation ou creer la div menus avec l'id
+  const tableauReservation = document.createElement('table')
   tableau.innerHTML = tableauReservation;
-  menus.className('tableCommande')
-  menus.append(tableau);
+  menusReservation.className('tableCommande')
+  menusReservation.append(tableauReservation);
   // tableau.setAttributes("border", 2);
 }
 
