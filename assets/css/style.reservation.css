@@ -1,0 +1,73 @@
+/* Debut Header */
+
+.imageLogo{
+    width: 115px;
+    margin-left: 40px;
+  }
+  
+  .bg-alice{
+    background-color: aliceblue;
+  }
+  nav{
+    background-color: black;
+  }
+  
+  .nav-link{
+    color: orange !important;
+    font-size: 23px;
+    margin-left: 30px;
+  }
+  
+  .home{
+    border: 1px dashed gray;
+  }
+  
+  /* Fin Header */
+
+
+   /* Debut Header */
+.banniereReservation{
+    background-image: url("../imgs/reservation/res1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    color: white;
+}
+
+
+.reservation{
+    background-color: #F6F0D0;
+    box-shadow: 3 px black;
+}
+
+.imageReservation{
+    width: 100%;
+    height: 100%;
+}
+
+.titleReservationTable{
+    color: orange;
+}
+
+.inputReaservation{
+    padding: 18px 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+}
+
+.bouttonreaservation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button{
+    padding: 18px 140px;
+    background-color: orange;
+    border-radius: 50px;
+    color: white;
+}
+
+  /* Fin Header */
