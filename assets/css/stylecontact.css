@@ -1,0 +1,22 @@
+.bannierecontact{
+    background-image: url("../imgs/reservation/res1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    color: white;
+}
+
+.contact{
+    background-color: #F6F0D0;
+    box-shadow: 3 px black;
+}
+
+
+.imagecontact{
+    width: 100%;
+    height: 100%;
+}
+
+.titlecontact{
+    color: orange;
+}
