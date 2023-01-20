@@ -17,15 +17,15 @@ buttonContact.addEventListener('click', (e) => {
   e.preventDefault()
   listMessageContact.push({ information: `${nomContact}`, email: `${emailContact}`, message: `${textareaContact}` });
   console.log(listMessageContact);
-  localStorage.listMessageContact = JSON.stringify(listMessageContact);
-  nomContact.innerTex=" "
+  // localStorage.listMessageContact = JSON.stringify(listMessageContact);SECTION LOCAL STORAGE
+  // nomContact.innerTex=" "
   // emailContact=" "
   // textareaContact=" "
 })
 
 // ecriture dans un tableau du contenu des differents messages recu par les utilisateurs
 //fonction a utiliser par l'administrateur qfin d'afficher le contenu du message
-var localObjectListMessageContact = localStorage.listMessageContact;
+// :var localObjectListMessageContact = localStorage.listMessageContact;
 function confectionTableauMessage() {// fonction a appeler dans la page admin
   let tableauMessage = `
                   <tr>
@@ -33,8 +33,8 @@ function confectionTableauMessage() {// fonction a appeler dans la page admin
                   <th> email</th>
                   <th> message</th>
                   </tr>`;
-  for (const element of   JSON.parse(localObjectListMessageContact)) {
-
+  // for (const element of   JSON.parse(localObjectListMessageContact)) {
+    for (const element of  listMessageContact) {
     tableauMessage += `<tr>
                       <td>${element.information}</td>
                       <td>${element.email}</td>
@@ -50,10 +50,12 @@ function confectionTableauMessage() {// fonction a appeler dans la page admin
 }
 //------------------------------------------------------------------------
 function affichageTableauMessage(tableauMessage) {
-  const menus = document.querySelector('#menus')
+  const menus = document.querySelector('#tableauMessage')//le menu doit avoir  un identifiant tableauMessage ou creer la div menus avec l'id
   const tableau = document.createElement('table')
   tableau.innerHTML = tableauMessage;
-  menus.append(tableauMessage);
+  menus.className('tableCommande')
+  menus.append(tableau);
+  // tableau.setAttributes("border", 2);
 }
 
 //section  retourne des resultat reservation champ reerver a la page administrateur a apporter des modifications
@@ -75,14 +77,14 @@ buttonReservation.addEventListener('click', (e) => {
   listReservation.push({ information: `${nomReservation}`, contact: `${telephoneReservation}`, nombre: `${nombrePersonReservation}` });
   console.log(listReservation);
   //pour le stockage dans le local storage pour l'acces a la page admis
-  localStorage.listReservation = JSON.stringify(listReservation);
+  // localStorage.listReservation = JSON.stringify(listReservation) SECTION LOCALSTORAGE
 
 })
 // ecriture dans un tableau du contenu des differents messages recu par les utilisateurs
 //fonction a utiliser par l'administrateur qfin d'afficher le contenu du message en tant que objet stocker dans le local storage
-var localObjectListReservation = localStorage.listReservation;
+// var localObjectListReservation = localStorage.listReservation;
 //affiche le contenu dans la console
-console.log(JSON.parse(localObjectListReservation));
+// console.log(JSON.parse(localObjectListReservation));
 function confectionTableauReservation() {//fonction a appéllé dans la page admin 
   let tableauReservation = `
                   <tr>
@@ -90,8 +92,9 @@ function confectionTableauReservation() {//fonction a appéllé dans la page adm
                   <th> email</th>
                   <th> message</th>
                   </tr>`;
-  for (const element of JSON.parse(localObjectListReservation )) {
-
+                  listReservation
+  // for (const element of JSON.parse(localObjectListReservation )) {pour parcourrir le local storage
+    for (const element of listReservation) {
     tableauReservation += `<tr>
                       <td>${element.information}</td>
                       <td>${element.contact}</td>
@@ -107,11 +110,12 @@ function confectionTableauReservation() {//fonction a appéllé dans la page adm
 }
 //------------------------------------------------------------------------
 function affichageTableauReservation(tableauReservation) {
-  const menus = document.querySelector('#tableauReservation')
+  const menus = document.querySelector('#tableauReservation')////le menu doit avoir  un identifiant tableauReservation ou creer la div menus avec l'id
   const tableau = document.createElement('table')
   tableau.innerHTML = tableauReservation;
+  menus.className('tableCommande')
   menus.append(tableau);
-  tableau.setAttributes("border", 2);
+  // tableau.setAttributes("border", 2);
 }
 
 //akou jean vivien fin
